@@ -1,0 +1,81 @@
+/* card */
+.article-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: .25rem .5rem;
+    max-width: 380px;
+    width: 380px;
+}
+
+.article-card-header{
+    display: flex;
+    gap: .2rem;
+}
+.article-card-header .article-card-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* Datos del usuario */
+.article-card-user-data{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+/* datos específicos de usuario */
+.article-card-user-data strong{
+    font-size: 1rem;
+    text-wrap:  nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 160px;
+}
+.article-card-user-data span{
+    font-size: .9rem;
+    line-height: .9rem;
+    color: lightgray
+}
+/* btn */
+.article-card-btn{
+    margin-left: .5rem;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+.article-card-btn:hover{
+    opacity: .8;
+    transition: all .1s linear;
+}
+
+/* btn following */
+.article-card-btn.is-following{
+    width: 150px;
+    border: 1px solid #bbb;
+    color: white;
+    background-color: transparent;
+}
+.article-card-btn.is-following:hover{
+    color: red;
+    background-color: rgb(248, 134, 134);
+    border: 1px solid rgba(248,134,134)
+}
+
+
+/* btn unfollow */
+.article-card-btn.is-following:hover .article-card-unfollow{
+    display: block;
+}
+.article-card-btn.is-following:hover .article-card-text{
+    display: none;
+}
+.article-card-unfollow{
+    display: none;
+}
